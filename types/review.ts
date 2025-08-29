@@ -2,7 +2,7 @@ export interface Review {
   id: string;
   title: string;
   image?: string;
-  pageCount?: number;
+  pages?: number;
   author?: string;
   rating?: 0 | 1 | 2 | 3 | 4 | 5;
   review?: string;
