@@ -13,10 +13,10 @@ export const ReviewCardHome = ({ review, onPress }: Props) => {
       <View>
         <Image
           source={{uri: review.image}}
-          className="w-full h-[200px] rounded-xl"
+          className="w-full h-[250px] rounded-xl"
           resizeMode="cover"
         />
-        <View>
+        <View className="items-center">
           <RatingStars rating={review.rating} />
         </View>
       </View>

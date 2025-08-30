@@ -15,17 +15,17 @@ const RatingStars = ({ rating }: Props) => {
   const totalStars = 5;
 
   return (
-    <View className="flex-row items-center gap-1 mt-2 ">
+    <View className="flex-row items-center gap-3 mt-3 ">
       {Array.from({ length: totalStars }, (_, i) => {
         if (i < fullStars) {
-          return <Ionicons key={i} name="star" size={20} color="#FFD700" />;
+          return <Ionicons key={i} name="star" size={23} color="#FFD700" />;
         } else if (i === fullStars && halfStar) {
           return (
-            <Ionicons key={i} name="star-half" size={20} color="#FFD700" />
+            <Ionicons key={i} name="star-half" size={23} color="#FFD700" />
           );
         } else {
           return (
-            <Ionicons key={i} name="star-outline" size={20} color="#FFD700" />
+            <Ionicons key={i} name="star-outline" size={23} color="#FFD700" />
           );
         }
       })}

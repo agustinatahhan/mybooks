@@ -26,7 +26,7 @@ const Home = () => {
   );
 
   return (
-    <SafeAreaView className="flex-1">
+    <SafeAreaView className="flex-1 bg-background">
       <FlatList
         data={reviews}
         keyExtractor={(item) => item.id}
