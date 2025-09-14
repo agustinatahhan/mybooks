@@ -55,7 +55,7 @@ const Home = () => {
         }
         renderItem={({ item }) => (
           <View className="flex-1 mb-5 mx-2">
-            <ReviewCardHome review={item} onPress={() => router.push("/")} />
+            <ReviewCardHome review={item} onPress={() => router.push(`/(stack)/reviewDetail/${item.id}`)} />
           </View>
         )}
       />

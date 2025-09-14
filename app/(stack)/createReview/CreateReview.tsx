@@ -130,8 +130,8 @@ const CreateReview = () => {
                     ? { uri: image }
                     : require("../../../assets/images/portada.png")
                 }
-                className="w-80 h-96 rounded-xl"
-                resizeMode="cover"
+                className="w-80 h-80 rounded-xl"
+                resizeMode="contain"
               />
             </Pressable>
             <RatingStarsInput value={rating} onChange={setRating} />
